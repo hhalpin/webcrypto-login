@@ -80,6 +80,7 @@ h1 {
     border: none;
     background: linear-gradient(to right, #92FE9D , #00C9FF);
     color: white;
+    border: 1px solid white;
     cursor: pointer;
 }
 
