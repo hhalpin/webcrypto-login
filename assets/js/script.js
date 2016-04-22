@@ -3,6 +3,7 @@
     var username =  document.getElementById('username-field');
     var password = document.getElementById('password-field');
     var loginBtn = document.getElementById('login-btn');
+    var forgotPassword = document.getElementById('forgot-password-link');
     var selectedTextArea = document.activeElement;
 
 
@@ -17,8 +18,10 @@
         if(loginBtn.className === 'active') {
             loginBtn.innerHTML = '';
             loginBtn.className += ' loading';
+            forgotPassword.className += ' hidden';
         }
     }, true);
+
 
 
     function checkForm() {
