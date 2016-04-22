@@ -1,0 +1,123 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#start-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #92FE9D , #00C9FF);
+    display: none;
+}
+
+#login-screen {
+    padding-top: 80px;
+}
+
+#login-screen .container {
+    text-align: center;
+}
+
+#login-screen form {
+    margin-top: 70px;
+}
+
+#login-screen form .input-container {
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#login-screen form .input-container p img {
+    margin-top: 6px;
+    float: left;
+    opacity: 0.5;
+}
+
+#login-screen form .input-container p {
+    margin: 8px;
+}
+
+#login-screen form .input-container input {
+    border: none;
+    font-family: Lato;
+    font-size: 0.9em;
+    outline: none;
+    letter-spacing: 0.03em;
+}
+
+#login-screen form button {
+    width: 65%;
+    margin-top: 50px;
+    padding: 15px 20px 15px 20px;
+    background-image: none;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.3);
+    letter-spacing: 0.05em;
+}
+
+#login-screen form p.forgot-password a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #76A6EF;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.5);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.5);
+}
+
+:-ms-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background-color: #3B4465;
+    }
+
+    #login-screen {
+        max-width: 450px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: white;
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    #login-screen form {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+}
