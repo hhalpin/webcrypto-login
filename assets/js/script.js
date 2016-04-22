@@ -3,6 +3,7 @@
     var username =  document.getElementById('username-field');
     var password = document.getElementById('password-field');
     var loginBtn = document.getElementById('login-btn');
+    var selectedTextArea = document.activeElement;
 
 
     username.addEventListener("input", function() {
