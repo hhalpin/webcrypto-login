@@ -123,6 +123,34 @@ h1 {
 
 }
 
+#hilighted-circle {
+	stroke-dasharray:190;
+	stroke-dashoffset:45%;
+        -webkit-animation: 1s rotate linear infinite;
+    animation: 1s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes rotate {
+    from {
+    transform: rotate(0);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+    -webkit-transform: rotate(0);
+    }
+    to {
+    -webkit-transform: rotate(360deg);
+    }
+}
+
 .hidden {
     display: none;
     opacity: 0;
