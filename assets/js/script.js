@@ -6,13 +6,20 @@
     var selectedTextArea = document.activeElement;
 
 
-    username.addEventListener("input", function() {
+    username.addEventListener('input', function() {
         checkForm();
     }, true);
-    password.addEventListener("input", function() {
+    password.addEventListener('input', function() {
         checkForm();
         console.log('hello');
     }, true);
+    loginBtn.addEventListener('click', function() {
+        if(loginBtn.className === 'active') {
+            loginBtn.innerHTML = '';
+            loginBtn.className += ' loading';
+        }
+    }, true);
+
 
     function checkForm() {
         if(username.value && password.value && loginBtn.className != 'active') {
