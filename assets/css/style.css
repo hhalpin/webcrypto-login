@@ -89,6 +89,7 @@ h1 {
     font-size: 0.9em;
     color: rgba(0,0,0,0.3);
     letter-spacing: 0.05em;
+        height: 50px;
 }
 
 #login-screen form button.active {
