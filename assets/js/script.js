@@ -8,8 +8,15 @@
     var forgotPassword = document.getElementById('forgot-password-link');
     var passwordAuthBtn = document.getElementById('password-auth-btn');
     var webCryptoStatus  = document.getElementById('security-status');
+    var form = document.getElementsByClassName('form');
+    var webcryptoEnable = true;
 
-    var webcryptoEnable = false;
+
+
+    form[0].addEventListener("submit", function(e) {
+        //do whatever you need to do
+
+    });
 
     if(webcryptoEnable) {
         webCryptoStatus.className += ' enable';
