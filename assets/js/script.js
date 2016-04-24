@@ -7,7 +7,17 @@
     var loginBtn = document.getElementById('login-btn');
     var forgotPassword = document.getElementById('forgot-password-link');
     var passwordAuthBtn = document.getElementById('password-auth-btn');
+    var webCryptoStatus  = document.getElementById('security-status');
 
+    var webcryptoEnable = false;
+
+    if(webcryptoEnable) {
+        webCryptoStatus.className += ' enable';
+        webCryptoStatus.innerHTML = '<span class="octicon octicon-lock"></span> webcrypto enable, high security available';
+    } else {
+        webCryptoStatus.className += ' disable';
+        webCryptoStatus.innerHTML = '<span class="octicon octicon-lock"></span> webcrypto disable, permissions restricted';
+    }
 
     passwordAuthBtn.addEventListener('click', function() {
         loginScreen.style.display = 'block';

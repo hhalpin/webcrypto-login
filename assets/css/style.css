@@ -50,12 +50,32 @@ h1 {
 }
 
 #login-screen {
-    padding-top: 80px;
+    padding-top: 0px;
     display: none;
 }
 
 #login-screen .container {
     text-align: center;
+}
+
+#login-screen p#security-status {
+    color: white;
+    background-color: #FF1744;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    font-size: 0.9em;
+}
+
+#login-screen p#security-status span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#login-screen p#security-status.enable {
+    background-color: #00E676;
 }
 
 #login-screen form {
