@@ -1,19 +1,27 @@
 (function() {
 
+    var startScreen = document.getElementById('start-screen');
+    var loginScreen =  document.getElementById('login-screen');
     var username =  document.getElementById('username-field');
     var password = document.getElementById('password-field');
     var loginBtn = document.getElementById('login-btn');
     var forgotPassword = document.getElementById('forgot-password-link');
-    var selectedTextArea = document.activeElement;
+    var passwordAuthBtn = document.getElementById('password-auth-btn');
 
+
+    passwordAuthBtn.addEventListener('click', function() {
+        loginScreen.style.display = 'block';
+        startScreen.style.display = 'none';
+    }, true);
 
     username.addEventListener('input', function() {
         checkForm();
     }, true);
+
     password.addEventListener('input', function() {
         checkForm();
-        console.log('hello');
     }, true);
+
     loginBtn.addEventListener('click', function() {
         if(loginBtn.className === 'active') {
             loginBtn.innerHTML = '';

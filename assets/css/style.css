@@ -23,11 +23,35 @@ h1 {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, #92FE9D , #00C9FF);
-    display: none;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#start-screen .container button {
+    width: 80%;
+    margin-top: 10px;
+    padding: 15px 20px 15px 20px;
+    background-image: none;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.3);
+    letter-spacing: 0.05em;
+    height: 50px;
+    outline:none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#start-screen .container button.active {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    cursor: pointer;
 }
 
 #login-screen {
     padding-top: 80px;
+    display: none;
 }
 
 #login-screen .container {
@@ -178,6 +202,16 @@ h1 {
         background-color: #3D5AFE;
         background-color: #5C6BC0;
         background-color: #eee;
+    }
+
+    #start-screen {
+        max-width: 450px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: white;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
 
     #login-screen {
