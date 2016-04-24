@@ -13,11 +13,6 @@
 
 
 
-    form[0].addEventListener("submit", function(e) {
-        //do whatever you need to do
-
-    });
-
     if(webcryptoEnable) {
         webCryptoStatus.className += ' enable';
         webCryptoStatus.innerHTML = '<span class="octicon octicon-lock"></span> webcrypto enable, high security available';
@@ -29,6 +24,12 @@
     passwordAuthBtn.addEventListener('click', function() {
         loginScreen.style.display = 'block';
         startScreen.style.display = 'none';
+
+
+            form[0].addEventListener("submit", function(e) {
+                //do whatever you need to do
+
+            });
     }, true);
 
     username.addEventListener('input', function() {
